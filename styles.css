@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(180deg, #171d28 0%, #111827 100%);
+    color: #eeeeee;
+    font-family: 'Poppins', sans-serif;
+    direction: rtl;
+}
+
+body[data-lang="en"] {
+    direction: ltr;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    transition: all 0.2s ease;
+}
+
+header,
+.hero,
+.aboutMe,
+.skills,
+.myworks,
+.contactme {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    direction: rtl;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #eeee;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    color: #00adb5;
+}
+
+.lang-toggle {
+    background: transparent;
+    color: #eeeeee;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.lang-toggle:hover {
+    border-color: #00adb5;
+    color: #00adb5;
+}
+
+hr {
+    opacity: 0.18;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    padding-bottom: 4rem;
+}
+
+.hero,
+.aboutMe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.hero {
+    min-height: 580px;
+}
+
+.eyebrow {
+    display: inline-block;
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #00adb5;
+    margin-bottom: 0.7rem;
+    opacity: 0.95;
+}
+
+.herosup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
+}
+
+.name {
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    color: #00adb5;
+    line-height: 1.1;
+}
+
+.title {
+    font-size: clamp(2.6rem, 4vw, 4.5rem);
+    color: #eeeeee;
+    line-height: 1.1;
+}
+
+.tagline {
+    margin-top: 1rem;
+    max-width: 580px;
+    color: rgba(238, 238, 238, 0.75);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.herobtns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2.2rem;
+}
+
+.hireme,
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 18px;
+    padding: 0.9rem 1.6rem;
+    font-weight: 600;
+}
+
+.hireme {
+    background: linear-gradient(135deg, #00adb5 0%, #2ec4bf 100%);
+    color: #fff;
+    box-shadow: 0 12px 24px rgba(0, 173, 181, 0.3);
+    gap: 0.7rem;
+}
+
+.hireme:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 28px rgba(0, 173, 181, 0.35);
+}
+
+.hireme svg {
+    width: 26px;
+    height: 26px;
+}
+
+.secondary-btn {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #eeeeee;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.secondary-btn:hover {
+    border-color: rgba(0, 173, 181, 0.8);
+    color: #00adb5;
+}
+
+.stats {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.stats li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 110px;
+}
+
+.stats strong {
+    font-size: 1.8rem;
+    color: #00adb5;
+}
+
+.stats span {
+    color: rgba(238, 238, 238, 0.7);
+    font-size: 0.9rem;
+}
+
+.profile-panel {
+    margin-top: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.9rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    padding: 0.55rem 1rem 0.55rem 0.6rem;
+    width: fit-content;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.instagram-user {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: #eeeeee;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.92rem;
+}
+
+.instagram-user svg {
+    width: 18px;
+    height: 18px;
+    color: #f5f5f5;
+}
+
+.instagram-profile {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 173, 181, 0.7);
+}
+
+.profile-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+}
+
+.profile-meta .handle {
+    color: #f4f4f4;
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+.profile-meta small {
+    color: rgba(238, 238, 238, 0.7);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.heroimg,
+.aboutMeimg {
+    width: min(100%, 430px);
+    height: auto;
+}
+
+.arrow {
+    position: absolute;
+    transform: translateX(-5.5rem) translateY(1.5rem);
+}
+
+.aboutMe {
+    gap: 6rem;
+    margin-top: 6rem;
+}
+
+.textcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    flex: 1;
+}
+
+.texttitle {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 2rem;
+}
+
+.aboutName {
+    color: #eeeeee;
+}
+
+.aboutMepar {
+    color: rgba(238, 238, 238, 0.75);
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.about-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.6rem;
+}
+
+.about-pills span {
+    border: 1px solid rgba(0, 173, 181, 0.4);
+    background: rgba(0, 173, 181, 0.08);
+    color: #dff9fa;
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.82rem;
+}
+
+.skills,
+.myworks,
+.contactme {
+    margin-top: 6rem;
+}
+
+.section-heading {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: clamp(2.3rem, 4vw, 3rem);
+    color: #eeeeee;
+}
+
+.section-heading span {
+    color: #00adb5;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 22px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 173, 181, 0.7);
+}
+
+.skill-icon {
+    width: 62px;
+    height: 62px;
+    margin: 0 auto 1rem;
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(0, 173, 181, 0.18), rgba(0, 173, 181, 0.04));
+    border: 1px solid rgba(0, 173, 181, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00adb5;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.skill-card h3 {
+    color: #ffffff;
+    margin-bottom: 0.7rem;
+}
+
+.skill-card p {
+    color: rgba(238, 238, 238, 0.72);
+    line-height: 1.8;
+}
+
+.myworks,
+.contactme {
+    display: block;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.work-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 173, 181, 0.7);
+}
+
+.work-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.work-content {
+    padding: 1.5rem;
+}
+
+.work-content h3 {
+    color: #00adb5;
+    margin-bottom: 0.75rem;
+}
+
+.work-content p {
+    color: rgba(238, 238, 238, 0.8);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.work-link {
+    color: #eeeeee;
+    text-decoration: none;
+    border-bottom: 2px solid #00adb5;
+    padding-bottom: 0.2rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    color: #eeeeee;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+}
+
+.contact-item:hover {
+    border-color: rgba(0, 173, 181, 0.7);
+    transform: translateY(-2px);
+}
+
+.contact-item img {
+    width: 28px;
+    height: 28px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.socials a {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.socials a:hover {
+    background: rgba(0, 173, 181, 0.15);
+    border-color: rgba(0, 173, 181, 0.8);
+}
+
+.social-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.social-link svg {
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+.social-tiktok {
+    background: #000000;
+    color: #ffffff;
+}
+
+.social-instagram {
+    color: #fff;
+    background: radial-gradient(circle at 30% 30%, #feda75 0%, #f58529 18%, #dd2a7b 42%, #8134af 63%, #515bd4 100%);
+}
+
+.social-snapchat {
+    background: #fffc00;
+    color: #111111;
+}
+
+.social-website {
+    background: #00adb5;
+    color: #ffffff;
+}
+
+@media (max-width: 900px) {
+
+    .hero,
+    .aboutMe {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .works-grid,
+    .skills-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        justify-content: center;
+    }
+
+    .texttitle {
+        justify-content: center;
+    }
+
+    .navigation ul {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 620px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navigation ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .herobtns {
+        justify-content: center;
+    }
+
+    .contact-item {
+        justify-content: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Mohamed Hasanen, Software Engineer specializing in AI and Cybersecurity." />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mohamed Hasanen | Portfolio</title>
+</head>
+
+<body data-lang="ar">
+    <header>
+        <img src="assets/svg/logo.svg" alt="Mohamed Hasanen logo" />
+        <nav class="navigation">
+            <ul>
+                <li><a href="#aboutMe" data-i18n="nav.about">عني</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">مهاراتي</a></li>
+                <li><a href="#myworks" data-i18n="nav.works">أعمالي</a></li>
+                <li><a href="#contactme" data-i18n="nav.contact">تواصل</a></li>
+            </ul>
+        </nav>
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button>
+    </header>
+    <hr />
+
+    <main>
+        <section class="hero">
+            <img class="arrow" src="assets/svg/arrow.svg" alt="arrow" />
+            <div class="herosup">
+                <p class="eyebrow" data-i18n="hero.eyebrow">طالب / مطوّر حلول رقمية</p>
+                <h1 class="name" data-i18n="hero.name">أنا محمد حسانين</h1>
+                <h1 class="title" data-i18n="hero.title">مهندس برمجيات</h1>
+                <p class="tagline" data-i18n="hero.tagline">أبني تجارب رقمية عملية تجمع بين التصميم، التقنية، والذكاء
+                    الاصطناعي.</p>
+                <div class="herobtns">
+                    <a class="hireme" href="#contactme" aria-label="تواصل معي" title="تواصل معي">
+                        <span data-i18n="hero.button">تواصل معي</span>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h12m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a class="secondary-btn" href="#myworks" data-i18n="hero.secondary">مشاريعي</a>
+                </div>
+
+                <ul class="stats">
+                    <li>
+                        <strong>1</strong>
+                        <span data-i18n="stat.years">سنة</span>
+                    </li>
+                    <li>
+                        <strong>5</strong>
+                        <span data-i18n="stat.projects">مشاريع</span>
+                    </li>
+                    <li>
+                        <strong>100%</strong>
+                        <span data-i18n="stat.focus">تركيز</span>
+                    </li>
+                </ul>
+
+                <div class="profile-panel">
+                    <a href="https://instagram.com/_mohamed_hasanen_" target="_blank" rel="noopener noreferrer"
+                        class="instagram-user" aria-label="Instagram profile">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor"
+                                stroke-width="1.8" />
+                            <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8" />
+                            <circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" />
+                        </svg>
+                        <span>_mohamed_hasanen_</span>
+                    </a>
+                </div>
+            </div>
+            <img src="assets/svg/Hero.svg" alt="hero image" class="heroimg" />
+        </section>
+
+        <section class="aboutMe" id="aboutMe">
+            <img src="assets/svg/AboutMe.svg" alt="aboutMe image" class="aboutMeimg" />
+            <div class="textcontainer">
+                <div class="texttitle">
+                    <h1 class="aboutName" data-i18n="about.title">عني</h1>
+                    <img src="assets/svg/lightbulb.svg" alt="lightbulb" class="light" />
+                </div>
+                <p class="aboutMepar" data-i18n="about.text">
+                    أنا محمد حسانين، طالب علوم حاسب آلي ألتزم بتطوير مهاراتي في الذكاء الاصطناعي والأمن السيبراني،
+                    وأحب تعلم كل ما هو جديد وبناء حلول عملية للمشكلات التقنية بطريقة عملية وعملية.
+                </p>
+                <div class="about-pills">
+                    <span>AI</span>
+                    <span>Cybersecurity</span>
+                    <span>Web</span>
+                    <span>Problem Solving</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="section-heading">
+                <h2 data-i18n="skills.title">مهاراتي</h2>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <div class="skill-icon">AI</div>
+                    <h3 data-i18n="skills.ai.title">الذكاء الاصطناعي</h3>
+                    <p data-i18n="skills.ai.text">أعمل على تصميم حلول تعتمد على الذكاء الاصطناعي لتحسين العمليات واتخاذ
+                        القرارات.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">CS</div>
+                    <h3 data-i18n="skills.security.title">الأمن السيبراني</h3>
+                    <p data-i18n="skills.security.text">أهتم بفهم الثغرات الأمنية وتطوير استراتيجيات حماية أكثر قوة
+                        واستدامة.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">WEB</div>
+                    <h3 data-i18n="skills.web.title">تطوير الويب</h3>
+                    <p data-i18n="skills.web.text">أبني صفحات ومواقع متجاوبة وتجارب مستخدم سلسة ومريحة للمستخدم النهائي.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="myworks" id="myworks">
+            <div class="section-heading">
+                <h2 data-i18n="works.title">أعمالي</h2>
+            </div>
+
+            <div class="works-grid">
+                <article class="work-card">
+                    <img src="assets/imgs/landingPage.png" alt="Landing page project" />
+                    <div class="work-content">
+                        <h3 data-i18n="works.card1.title">صفحة هبوط</h3>
+                        <p data-i18n="works.card1.text">صفحة هبوط حديثة ومتجاوبة تم تصميمها لعرض المنتجات والخدمات
+                            بأسلوب نظيف وحديث.</p>
+                        <a href="#contactme" class="work-link" data-i18n="works.card1.link">عرض المشروع</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="assets/imgs/webApp.png" alt="Web app project" />
+                    <div class="work-content">
+                        <h3 data-i18n="works.card2.title">تطبيق ويب</h3>
+                        <p data-i18n="works.card2.text">تطبيق ويب تفاعلي يركز على سهولة الاستخدام والتنقل السلس وتجربة
+                            مستخدم قوية.</p>
+                        <a href="#contactme" class="work-link" data-i18n="works.card2.link">عرض المشروع</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="assets/imgs/app.png" alt="Mobile app project" />
+                    <div class="work-content">
+                        <h3 data-i18n="works.card3.title">تطبيق موبايل</h3>
+                        <p data-i18n="works.card3.text">تصميم مفهوم لتطبيق جوال يركز على واجهة مستخدم أنيقة وسهلة
+                            التصفح.</p>
+                        <a href="#contactme" class="work-link" data-i18n="works.card3.link">عرض المشروع</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contactme" id="contactme">
+            <div class="section-heading">
+                <h2 data-i18n="contact.title">تواصل <span>معي</span></h2>
+            </div>
+
+            <div class="contact-grid">
+                <a href="mailto:mohamedhasanen3155@gmail.com" class="contact-item">
+                    <img src="assets/svg/Email.svg" alt="Email icon" />
+                    <span>mohamedhasanen3155@gmail.com</span>
+                </a>
+
+                <a href="tel:01201570235" class="contact-item">
+                    <img src="assets/svg/phone.svg" alt="Phone icon" />
+                    <span>01201570235</span>
+                </a>
+            </div>
+
+            <div class="socials">
+                <a href="https://www.tiktok.com/@mohamed.70_70" target="_blank" rel="noopener noreferrer"
+                    aria-label="TikTok" class="social-link social-tiktok">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M15.5 3.5c.5 1.7 1.7 2.9 3.5 3.2v2.7c-1.5-.1-2.8-.7-3.8-1.5v6.9c0 3.3-2.7 6-6 6s-6-2.7-6-6 2.7-6 6-6c.6 0 1.2.1 1.8.3v2.8a4.1 4.1 0 0 0-1.8-.5c-1.9 0-3.5 1.6-3.5 3.5S8.1 18.3 10 18.3 13.5 16.7 13.5 14.8V3.5h2Z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                    class="social-link social-instagram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor"
+                            stroke-width="1.8" />
+                        <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8" />
+                        <circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" />
+                    </svg>
+                </a>
+                <a href="https://snapchat.com/add/mohamed_h25744" target="_blank" rel="noopener noreferrer"
+                    aria-label="Snapchat" class="social-link social-snapchat">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M12.1 3.5c1.9 0 3.5 1.3 4.2 3 .2.4.4.7.4 1.1 0 .5-.2 1-.5 1.4-.3.4-.7.7-1.1 1-.5.3-.9.9-.9 1.5v.2c0 .6.3 1.1.9 1.5.4.3.8.6 1.1 1 .3.4.5.9.5 1.4 0 .4-.1.7-.4 1.1-.7 1.7-2.3 2.8-4.2 2.8-1.9 0-3.5-1.1-4.2-2.8-.3-.4-.4-.7-.4-1.1 0-.5.2-1 .5-1.4.3-.4.7-.7 1.1-1 .5-.3.9-.9.9-1.5v-.2c0-.6-.4-1.2-.9-1.5-.4-.3-.8-.6-1.1-1-.3-.4-.5-.9-.5-1.4 0-.4.2-.7.4-1.1.7-1.7 2.3-3 4.2-3Zm.1 2.1c-.7 0-1.3.5-1.8 1.3-.3.4-.5.8-.6 1.3-.1.6-.2 1.1-.6 1.5-.6.6-1.3 1.1-1.3 2.1 0 .6.3 1.2.8 1.6.4.3.8.5 1.2.8.5.3.9.7 1.1 1.3.2.5.2 1.1 0 1.6-.5 1.4 1.2 1.8 2.2.8.7-.6 1.2-1.2 1.7-1.8.4-.5.8-.9 1.4-1.2.7-.5 1.1-1.1 1.1-1.9 0-.9-.7-1.5-1.3-2.1-.4-.4-.5-.9-.6-1.5-.1-.5-.3-.9-.6-1.3-.5-.8-1.1-1.3-1.8-1.3Z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+                <a href="https://mohamedhasanen.com" target="_blank" rel="noopener noreferrer" aria-label="Website"
+                    class="social-link social-website">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8" />
+                        <path d="M3 12h18M12 3c2.5 2.5 4 5.4 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.4-4-9s1.5-6.5 4-9Z"
+                            fill="none" stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const translations = {
+            ar: {
+                'nav.about': 'عني',
+                'nav.skills': 'مهاراتي',
+                'nav.works': 'أعمالي',
+                'nav.contact': 'تواصل',
+                'hero.eyebrow': 'طالب / مطوّر حلول رقمية',
+                'hero.name': 'أنا محمد حسانين',
+                'hero.title': 'مهندس برمجيات',
+                'hero.tagline': 'أبني تجارب رقمية عملية تجمع بين التصميم، التقنية، والذكاء الاصطناعي.',
+                'hero.button': 'تواصل معي',
+                'hero.secondary': 'مشاريعي',
+                'stat.years': 'سنوات',
+                'stat.projects': 'مشاريع',
+                'stat.focus': 'تركيز',
+                'about.title': 'عني',
+                'about.text': 'أنا محمد حسانين، طالب علوم حاسب آلي ألتزم بتطوير مهاراتي في الذكاء الاصطناعي والأمن السيبراني، وأحب تعلم كل ما هو جديد وبناء حلول عملية للمشكلات التقنية بطريقة عملية وعملية.',
+                'skills.title': 'مهاراتي',
+                'skills.ai.title': 'الذكاء الاصطناعي',
+                'skills.ai.text': 'أعمل على تصميم حلول تعتمد على الذكاء الاصطناعي لتحسين العمليات واتخاذ القرارات.',
+                'skills.security.title': 'الأمن السيبراني',
+                'skills.security.text': 'أهتم بفهم الثغرات الأمنية وتطوير استراتيجيات حماية أكثر قوة واستدامة.',
+                'skills.web.title': 'تطوير الويب',
+                'skills.web.text': 'أبني صفحات ومواقع متجاوبة وتجارب مستخدم سلسة ومريحة للمستخدم النهائي.',
+                'works.title': 'أعمالي',
+                'works.card1.title': 'صفحة هبوط',
+                'works.card1.text': 'صفحة هبوط حديثة ومتجاوبة تم تصميمها لعرض المنتجات والخدمات بأسلوب نظيف وحديث.',
+                'works.card1.link': 'عرض المشروع',
+                'works.card2.title': 'تطبيق ويب',
+                'works.card2.text': 'تطبيق ويب تفاعلي يركز على سهولة الاستخدام والتنقل السلس وتجربة مستخدم قوية.',
+                'works.card2.link': 'عرض المشروع',
+                'works.card3.title': 'تطبيق موبايل',
+                'works.card3.text': 'تصميم مفهوم لتطبيق جوال يركز على واجهة مستخدم أنيقة وسهلة التصفح.',
+                'works.card3.link': 'عرض المشروع',
+                'contact.title': 'تواصل <span>معي</span>'
+            },
+            en: {
+                'nav.about': 'About Me',
+                'nav.skills': 'Skills',
+                'nav.works': 'My Works',
+                'nav.contact': 'Contact',
+                'hero.eyebrow': 'Student / Digital Solutions Developer',
+                'hero.name': "I'm Mohamed Hasanen",
+                'hero.title': 'Software Engineer',
+                'hero.tagline': 'I build practical digital experiences that blend design, technology, and artificial intelligence.',
+                'hero.button': 'Let\'s Talk',
+                'hero.secondary': 'My Projects',
+                'stat.years': 'Years',
+                'stat.projects': 'Projects',
+                'stat.focus': 'Focus',
+                'about.title': 'About Me',
+                'about.text': 'I am Mohamed Hasanen, a Computer Science student passionate about Artificial Intelligence and Cybersecurity, and I enjoy learning new things while building practical solutions to technical problems.',
+                'skills.title': 'My Skills',
+                'skills.ai.title': 'Artificial Intelligence',
+                'skills.ai.text': 'I design AI-driven solutions that improve workflow efficiency and support smarter decision-making.',
+                'skills.security.title': 'Cybersecurity',
+                'skills.security.text': 'I focus on understanding vulnerabilities and building stronger, more resilient defense strategies.',
+                'skills.web.title': 'Web Development',
+                'skills.web.text': 'I build responsive websites and smooth digital experiences with modern user-focused design.',
+                'works.title': 'My Works',
+                'works.card1.title': 'Landing Page',
+                'works.card1.text': 'A modern, responsive landing page designed to showcase products and services with a clean and elegant style.',
+                'works.card1.link': 'View Project',
+                'works.card2.title': 'Web App',
+                'works.card2.text': 'An interactive web app focused on usability, smooth navigation, and a strong user experience.',
+                'works.card2.link': 'View Project',
+                'works.card3.title': 'Mobile App',
+                'works.card3.text': 'A concept design for a mobile app focused on a clean interface and easy browsing experience.',
+                'works.card3.link': 'View Project',
+                'contact.title': 'Contact <span>Me</span>'
+            }
+        };
+
+        const body = document.body;
+        const langToggle = document.getElementById('langToggle');
+
+        function applyLanguage(lang) {
+            const texts = translations[lang];
+            document.documentElement.lang = lang;
+            body.setAttribute('data-lang', lang);
+            body.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+            document.querySelectorAll('[data-i18n]').forEach((element) => {
+                const key = element.getAttribute('data-i18n');
+                const value = texts[key];
+
+                if (value) {
+                    element.innerHTML = value;
+                }
+            });
+
+            langToggle.textContent = lang === 'ar' ? 'EN' : 'AR';
+            langToggle.setAttribute('aria-label', lang === 'ar' ? 'Switch to English' : 'التبديل إلى العربية');
+        }
+
+        langToggle.addEventListener('click', () => {
+            const nextLang = body.getAttribute('data-lang') === 'ar' ? 'en' : 'ar';
+            applyLanguage(nextLang);
+        });
+
+        applyLanguage('ar');
+    </script>
+</body>
+
+</html>
